@@ -38,7 +38,6 @@ p {
 }
 
 .contacts,
-.hero-btn,
 .features-list,
 .specialization-list,
 .team-list,
@@ -97,19 +96,18 @@ p {
 /* Header Navigation */
 .header-nav {
   display: flex;
-  margin-right: auto;
+  margin-right: 0;
 }
 .site-list {
   display: flex;
   gap: 50px;
   padding-left: 0;
-}
-
-.contacts {
-  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .nav-item {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -121,11 +119,13 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .nav-item:hover,
 .nav-item:focus {
   color: var(--akcent-color);
 }
 .nav-item--active {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -136,6 +136,11 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .link-mail {
@@ -165,12 +170,13 @@ p {
 /* Hero section */
 .section-hero {
   background-color: var(--bgc-secondary);
-  padding-bottom: 30px;
 }
+
 .conteiner-hero {
-  padding: 106px 0px;
-  margin: 0 127.5;
-  justify-content: center;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 200px;
 }
 .hero-title {
   color: var(--logo-footer-color);
@@ -183,9 +189,20 @@ p {
   text-transform: uppercase;
 }
 .hero-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 10px 32px;
+  gap: 10px;
+
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 350px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
   color: var(--logo-footer-color);
   background-color: var(--akcent-color);
 
@@ -204,13 +221,27 @@ p {
 }
 
 /* Features section */
+.features-list {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.feature-item {
+  width: 270px;
+}
 .features-titie {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .features-txt {
   color: var(--text-color);
 
