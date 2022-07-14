@@ -58,8 +58,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Header section */
@@ -225,6 +224,7 @@ img {
 }
 
 /* Features section */
+
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -233,16 +233,11 @@ img {
 .features-list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 30px;
 }
-.features-item {
-  width: 270px;
-}
 
-.features-item:nth-child(4n) {
-  margin-right: 0;
+.features-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .features-titie {
@@ -265,6 +260,7 @@ img {
 }
 
 /* Specialization section */
+
 .specialization {
   padding-top: 0;
   padding-bottom: 94px;
@@ -431,6 +427,7 @@ img {
 .work-name {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .link {
