@@ -12,7 +12,6 @@
 .body {
   font-family: Roboto, sans-serif;
   color: var(--title-text-color);
-  width: 1600px;
   margin: auto;
 }
 
@@ -290,6 +289,7 @@ img {
 }
 
 /* Team section */
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -297,7 +297,7 @@ img {
   background-color: #f5f4fa;
 }
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -314,7 +314,6 @@ img {
 }
 
 .card-name {
-  width: 270px;
   padding: 30px 10px;
 }
 .team-caption {
@@ -400,10 +399,9 @@ img {
 .filters-btn {
   padding: 6px 22px;
   background-color: var(--filter-button);
-  color: var(var(--title-text-color));
+  color: var(--title-text-color);
   text-decoration: none;
 
-  font-style: 400;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
